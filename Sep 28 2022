@@ -1,0 +1,117 @@
+Sep 28 2022 Python
+
+groceries=['milk','bread']
+if(len(groceries)<15) and ('milk' in groceries):
+    print("Go to the grocery store")
+
+
+partystarted= True
+person='Octavio'
+guests=['Mario','Octavio','Steve']
+if partystarted:
+    if person in guests:
+        print("Welcome")
+
+
+partystarted= True
+person='Octavio'
+guests=['Mario','Octavio','Steve']
+if partystarted and person in guests:
+    print("Welcome")
+
+
+balance=0
+transactions=[100,-150,100,-200]
+for entry in transactions: # for loop
+    balance=balance+entry
+    if balance<0: # if statement
+        print("Overdraft Warning!")
+
+
+Topic: If Else Statement
+if-else statement:
+    The syntax is:
+        if condition: #if condition if True Then body/Executed
+        else: #if condition is not true then body 2 is executed.
+            
+Example 1:
+
+
+deposit=0
+withdrawaltotal=0
+Transactions=[100,-50, 150,-200]
+for entry in Transactions:
+    if entry>0:
+        deposit=deposit+entry
+    else:
+        withdrawaltotal+=entry
+print("The deposit is", deposit, "withdrawaltotal is",withdrawaltotal)
+
+#TOPIC: If-elif-else statement: The syntax is:
+
+if condition1:
+#body1
+elif condition2:
+#body2
+elif condition n:
+#body n
+else condition n+1: #optional if none of the above conditions are true then body n+1 is Executed
+#body n+1
+
+Example1:
+daynumber=int(input("enter an integer between 1 and 7:"))
+if daynumber==1:
+    day='Monday'
+elif daynumber==2:
+    day='Tueday'
+elif daynumber==3:
+    day='Wednesday'
+elif daynumber==4:
+    day='Thursday'
+elif daynumber==5:
+    day='Friday'
+elif daynumber==6:
+    day='Saturday'
+else:
+    day='Sunday'
+print(day)
+
+Example2:
+daynumber=int(input("enter an integer between 1 and 7:"))
+if daynumber==1:
+    day='Monday'
+elif daynumber==2:
+    day='Tueday'
+elif daynumber==3:
+    day='Wednesday'
+elif daynumber==4:
+    day='Thursday'
+elif daynumber==5:
+    day='Friday'
+elif daynumber==6:
+    day='Saturday'
+elif daynumber==7:
+    day='Sunday'
+else:
+    day= 'Please pick a number between 1 and 7!'
+print(day)
+
+--------------------------------------
+
+for x in range(20):
+    if x % 9 == 0:
+        print (x, 'is divisible by 9')
+    elif x % 3 == 0:
+        print (x, 'is divisible by 3')
+
+------------------------
+for x in range(20):
+    if x % 9 == 0 and x %3==0:
+        print (x, 'is divisible by 9')
+        print (x, 'is divisible by 3')
+    elif x % 9 == 0:
+        print (x, 'is divisible by 9')
+    elif x %3==0:
+        print (x, 'is divisible by 3')
+    
+------------------------------------
